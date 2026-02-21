@@ -4,15 +4,15 @@ We develop a Deep Learning-based Subsurface Current Reconstruction (DLSCR) model
 DLSCR ingests seven surface variables, including zonal and meridional surface currents (U, V), sea surface height (SSH), sea surface temperature (SST), sea surface salinity (SSS), and zonal and meridional wind stress (\tau_x, \tau_y), and then reconstruct subsurface ocean currents down to 643 m.
 
 code/
-  └── src/
-      ├── config.py 
-      ├── datasets.py
-      ├── model.py
-      ├── swin_transformer_unet_skip_expand_decoder_sys.py
-      ├── train_ddp.py
-      ├── trainer.py
-      ├── test.py
-      └── utils.py
+└── src/
+    ├── config.py
+    ├── datasets.py
+    ├── model.py
+    ├── swin_transformer_unet_skip_expand_decoder_sys.py
+    ├── train_ddp.py
+    ├── trainer.py
+    ├── test.py
+    └── utils.py
 
 **config.py**  
 Configuration management: defines/loads hyperparameters and model/training settings (e.g., Swin params, batch size, image size, paths).
